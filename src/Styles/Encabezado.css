@@ -1,0 +1,61 @@
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.estilo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px; 
+    /*animation: bounce 7s ease 0s 5 normal forwards; */      
+}
+.clip1{
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-color: #993DF6;  
+}
+
+.clip2{
+    clip-path: polygon(5% 0, 100% 87%, 100% 0);
+    background-color:  #5835D4;
+}
+.clip3{
+    clip-path: polygon(0 100%, 45% 0, 0 0);
+    background-color:  #464DEB;
+}
+.clip4{
+    clip-path: polygon(0 90%, 43% 1%, 0 0);
+    background-color: #3DA8F6;
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
